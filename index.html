@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JILAANI | Tech Portfolio</title>
     <link rel="stylesheet" href="index.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
 </head>
     <body>
     <header>
@@ -68,14 +68,13 @@
             <a href="home.html">
                 Live Demo
             </a></button>
-        <button class="click-here-btn">Github</button>
+        <button class="github-btn">Github</button>
         </div>
 
     <div class="landing-page-container">
         <div class="landing-page-hint">Landing Page Design</div>
         <p class="text-5">Modern product Landing Page using HTML and CSS</p>
         <button class="live-demo"><a href="https://jilaani.simdif.com/">Live Demo</a></button>
-        <button class="github-btn">GitHub</button>
     </div>
 
     <div class="css-animation-container">
@@ -85,7 +84,9 @@
             <a class="css-animation" href="css-animation.html">
                 Live Demo
             </a></button>
-        <button class="github-btn">GitHub</button>
+        <button class="github-btn"><a href="https://jilaani1.netlify.app" target="_blank">
+           GitHub
+          </a></button>
     </div>
     </div>
 </section>
@@ -120,5 +121,24 @@
   
 </section>  
 </div>
+<script>
+  const github-btnLinks = [
+    'https://github.com/jilaani10/My-portfolio/index.html',
+
+    'https://github.com/jilaani10/My-portfolio/css-animations.html'
+  ];
+
+  //Adds event listeners to both buttons
+  document.getElementById('github-btn'),addEventListener('click', () => {
+    window.open(githubLinks[0],
+      '_blank');
+  });
+
+  document.getElementById('github-btn').addEventListener('click', () => {
+    window.open(githubLinks[1],
+      '_blank');
+  });
+
+</script>
 </body>
 </html>
